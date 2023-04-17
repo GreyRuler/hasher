@@ -13,14 +13,16 @@ module.exports = {
 	mode: 'development',
 	entry: {
 		index: './src/index.js',
+		'crypto-js': './node_modules/crypto-js/crypto-js.js',
 	},
 	output: {
+		filename: '[name].js',
 		path: path.resolve(__dirname, 'dist'),
 	},
 	module: {
 		rules: [
 			{
-				test: /\.js$/,
+				test: /^((?!crypto-js).)*\.js$/,
 				exclude: /node_modules/,
 				use: {
 					loader: 'babel-loader',
