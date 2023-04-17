@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-undef
-importScripts('/crypto-js.js');
+importScripts('/hasher/crypto-js.js');
 // eslint-disable-next-line no-restricted-globals
 self.addEventListener('message', (event) => {
 	const reader = new FileReader();
