@@ -13,7 +13,7 @@ module.exports = {
 	mode: 'development',
 	entry: {
 		index: './src/index.js',
-		'crypto-js': './node_modules/crypto-js/crypto-js.js',
+		// 'crypto-js': './node_modules/crypto-js/crypto-js.js',
 	},
 	output: {
 		filename: '[name].js',
